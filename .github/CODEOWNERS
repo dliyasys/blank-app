@@ -1,1 +1,47 @@
 * @streamlit/community-cloud
+import sys
+import time
+
+def ketik_lambat(teks, kecepatan=0.04):
+    """Fungsi untuk membuat efek animasi mengetik."""
+    for karakter in teks:
+        sys.stdout.write(karakter)
+        sys.stdout.flush()
+        time.sleep(kecepatan)
+    print()
+
+def kue_ulang_tahun():
+    """Mencetak gambar kue ulang tahun sederhana."""
+    kue = """
+          i  i  i  i  i
+          |  |  |  |  |
+        ================""" + """
+       |  HAPPY BIRTHDAY |
+       |                 |
+     =======================
+    |      SELAMAT ULTAH    |
+    |          BABAH!       |
+    =========================
+    """
+    print(kue)
+
+def main():
+    print("\n" + "="*45)
+    kue_ulang_tahun()
+    print("="*45 + "\n")
+    
+    time.sleep(1)
+    
+    # Pesan untuk Ayah
+    ketik_lambat("ASSALAMUALAIKUM BABAH! Selamat Ulang Tahun BAH! 🎂🎉\n")
+    time.sleep(0.5)
+    ketik_lambat("Makasih udah jadi pahlawan, pelindung di rumah,")
+    ketik_lambat("dan jadi panutan buat di rumah.\n")
+    time.sleep(0.5)
+    ketik_lambat("Semoga Babah sehat selalu, panjang umur, dipanjangkan rezekinya, ga lama kalo minta anterin sekolah,")
+    ketik_lambat("dan selalu bahagia dan di rhidoi allah dalam setiap langkah Ayah. Aamiin! 🤲❤. maaf  ngucapinnya telet bah soalnya pas tanggal 8 ashfi masi sibux daftar sekolah sampe lupa minta traktir pas tanggal 8 ke babah  \n")
+    time.sleep(0.5)
+    ketik_lambat("Salam sayang dari anakmu yang paling cantik inieh 😎✨\n")
+
+if __name__ == "__main__":
+    main()
